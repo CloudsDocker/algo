@@ -6,10 +6,18 @@ import java.util.Arrays;
 
 //import org.hamcrest.
 public class arrayRemove {
-    int removeLargerElement(int[] input, int threshold) {
+    private int removeLargerElement(int[] input, int threshold) {
         // try to find elements larger than the threshold, and remove those elements in place
 
-        return -1;
+        int j=0;
+        for (int i = 0; i < input.length; i++) {
+                if(input[i]==threshold){
+                    continue;
+                }
+                input[j]=input[i];
+                j++;
+        }
+        return j;
     }
 
     public static void main(String[] args) {
