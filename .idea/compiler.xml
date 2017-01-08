@@ -19,8 +19,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="leetcodeAlgo_main" target="1.5" />
-      <module name="leetcodeAlgo_test" target="1.5" />
+      <module name="algo_main" target="1.5" />
+      <module name="algo_test" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcodeAlgo.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcodeAlgo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcodeAlgo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcodeAlgo_main.iml" group="leetcodeAlgo" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcodeAlgo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcodeAlgo_test.iml" group="leetcodeAlgo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algo.iml" filepath="$PROJECT_DIR$/.idea/modules/algo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/algo_main.iml" group="algo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/algo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/algo_test.iml" group="algo" />
     </modules>
   </component>
 </project>
