@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcodeAlgo.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcodeAlgo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcodeAlgo_main.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcodeAlgo_main.iml" group="leetcodeAlgo" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/leetcodeAlgo_test.iml" filepath="$PROJECT_DIR$/.idea/modules/leetcodeAlgo_test.iml" group="leetcodeAlgo" />
+    </modules>
+  </component>
+</project>
