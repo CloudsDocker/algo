@@ -10,4 +10,9 @@ public class TreeNode {
 		super();
 		this.value = value;
 	}
+	@Override
+	public String toString() {		
+		return String.format(" value is %d, and left is [%s], right is [%s]",value,left==null?"":left,right==null?"":right);
+	}
+	
 }
