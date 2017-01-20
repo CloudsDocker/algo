@@ -10,9 +10,7 @@ public class CountDownLatchDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		final CountDownLatch latch=new CountDownLatch(3);
-
 		
 		Thread cacheService=new Thread(new Service("cacheService",2,latch));
 		Thread alertService=new Thread(new Service("alertService",5,latch));
@@ -23,9 +21,8 @@ public class CountDownLatchDemo {
 		
 		try {
 			latch.await();
-			System.out.println("==== All services up, Applicaiton starting up====");
+			Logger.getLogger(Service.class.getName()).log(Level.INFO,"==== All services up, Applicaiton starting up====");
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -46,12 +43,10 @@ public class CountDownLatchDemo {
 			try {
 				Thread.sleep(timeToStart*1000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				Logger.getLogger(Service.class.getName()).log(Level.SEVERE,null,e);
-//				e.printStackTrace();
 			}
 			
-			System.out.println(name + " is UP.");
+			Logger.getLogger(Service.class.getName()).log(Level.INFO, name + " is UP.");
 			latch.countDown();
 		}
 	}
