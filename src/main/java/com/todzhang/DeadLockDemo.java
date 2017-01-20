@@ -9,8 +9,16 @@ public class DeadLockDemo {
 	public static void main(String[] args) {
 
 		DeadLockDemo inst=new DeadLockDemo();
-		Thread trd1=new Thread(inst.new threadA());
-		Thread trd2=new Thread(inst.new threadB());
+		
+		// below is dead lock
+//		Thread trd1=new Thread(inst.new threadA());
+//		Thread trd2=new Thread(inst.new threadB());
+//		trd1.start();
+//		trd2.start();
+		
+		// while below are NO dead lock
+		Thread trd1=new Thread(inst.new threadSafeA());
+		Thread trd2=new Thread(inst.new threadSafeA());
 		trd1.start();
 		trd2.start();
 	}
@@ -31,6 +39,37 @@ public class DeadLockDemo {
 	}
 	
 	class threadB implements Runnable{
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			synchronized (Integer.class) {
+				out.println("==== accquired lock  Integer  ====");
+				synchronized(String.class){
+					out.println("==== acuquired lock String ====");
+				}
+			}
+		}
+		
+	}
+	
+	
+	class threadSafeA implements Runnable{
+
+		@Override
+		public void run() {
+			// TODO Auto-generated method stub
+			synchronized (Integer.class) {
+				out.println("--- accquired lock Integer ---");
+				synchronized(String.class){
+					out.println("----- acuquired lock String  ----");
+				}
+			}
+		}
+		
+	}
+	
+	class threadSafeB implements Runnable{
 
 		@Override
 		public void run() {
