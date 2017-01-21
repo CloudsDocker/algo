@@ -2,6 +2,10 @@ package com.todzhang;
 
 import org.junit.*;
 
+import java.util.*;
+
+//import java.util.function.Predicate;
+
 import static org.junit.Assert.*;
 
 /**
@@ -26,9 +30,25 @@ public class PascalTriangleTest {
         }
     }
 
+//    Predicate<Integer> atLeast5= x -> x>5;
+
     @org.junit.Test
     public void testPascalTriangleList(){
-        PascalTriangle.getPascalTrigleList(5);
+        List<List<Integer>> list= PascalTriangle.getPascalTrigleList(5);
+
+//        list.forEach();
+        final int[] ary={2,5};
+        ThreadLocal tl=new ThreadLocal();
+
+        for (List<Integer> item: list
+             ) {
+            for (Integer i:item
+                 ) {
+
+                System.out.print(i);
+            }
+            System.out.print("\n");
+        }
     }
 
 }
