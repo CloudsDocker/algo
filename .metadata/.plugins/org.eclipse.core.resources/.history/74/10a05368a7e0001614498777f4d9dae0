@@ -73,6 +73,6 @@
  		for(int i=1;i<=4;i++){
  			System.out.println("-- width of "+i+"is :"+getWidth(root,i));
  		}
- 		System.out.println(" ==== the max width ===:"+getMaxWidth(root));
+ 		System.out.println(" ==== the max width ===");
  	}
  }

@@ -12,24 +12,6 @@
  		}
  	}
  	
- 	private static int getMaxWidth(Node node){
- 		int nMax=0;
- 		for(int i=1;i<=getHeight(node);i++){
- 			int nWidth=getWidth(node, i);
- 			if(nWidth>nMax){
- 				nMax=nWidth;
- 			}
- 		}
- 		
- 		return nMax;
- 	}
- 	
- 	/*
- 	 * The logic is decrease level while traverse from root (top to bottom)
- 	 * when there is no node, return zero
- 	 * while level is 1 means at the desired level, return 1 to add count
- 	 * the return value is count sum in both left and right node
- 	 */
  	private static int getWidth(Node node, int level){
  		if(node==null)
  			return 0;
@@ -73,6 +55,6 @@
  		for(int i=1;i<=4;i++){
  			System.out.println("-- width of "+i+"is :"+getWidth(root,i));
  		}
- 		System.out.println(" ==== the max width ===:"+getMaxWidth(root));
+ 		System.out.println(" ==== the max width ===");
  	}
  }
