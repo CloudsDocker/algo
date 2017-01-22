@@ -67,7 +67,7 @@ public class GetTreeWidthByQueue {
                  /  \
                 6   7
          */
-Node root=inst.new Node(1);
+ 		Node root=inst.new Node(1);
  		root.left=inst.new Node(2);
  		root.right=inst.new Node(3);
  		root.left.left=inst.new Node(4);
