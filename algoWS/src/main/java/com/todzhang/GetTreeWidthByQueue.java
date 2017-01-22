@@ -1,0 +1,82 @@
+package com.todzhang;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+//import com.todzhang.GetTreeWidth1.Node;
+
+public class GetTreeWidthByQueue {
+
+ 	class Node{
+ 		int value;
+ 		Node left,right;
+
+ 		public Node(int inValue){
+ 			this.value=inValue;
+ 		}
+ 	}
+ 	
+ 	private static int getMaxWidth(Node node){
+ 		if(node==null){
+ 			return 0;
+ 		}
+ 		
+ 		int result=0;
+ 		
+ 		Queue<Node> queue=new LinkedList<>();
+ 		queue.add(node);
+ 		while(!queue.isEmpty()){
+ 			// get the size of the queue
+ 			int count=queue.size();
+ 			
+ 			// update the maximum node count
+ 			result=Math.max(count, result);
+ 			
+ 			// iterate for all the nodes in the queue currently
+ 			// this "count" is the size of the queue prepared in last layer,
+ 			// so it's ideally to loop "count" times and call queue.poll will retrieve all nodes in current layer
+ 			// at the meanwhile, appending children to the queue
+ 			while(count-->0){
+ 				Node temp=queue.poll();
+ 				
+ 				// enqueue left and right 
+ 				if(temp.left!=null){
+ 					queue.add(temp.left);
+ 				}
+ 				if(temp.right!=null){
+ 					queue.add(temp.right);
+ 				}
+ 			}
+ 		}
+
+ 		
+ 		return result;
+ 	}
+	
+	public static void main(String[] args) {
+
+		GetTreeWidthByQueue inst=new GetTreeWidthByQueue();
+		/*
+        Constructed bunary tree is:
+              1
+            /  \
+           2    3
+         /  \    \
+        4   5     8 
+                 /  \
+                6   7
+         */
+ 		Node root=inst.new Node(1);
+ 		root.left=inst.new Node(2);
+ 		root.right=inst.new Node(3);
+ 		root.left.left=inst.new Node(4);
+ 		root.left.right=inst.new Node(5);
+ 		root.right.right=inst.new Node(8);
+ 		root.right.right.left=inst.new Node(6);
+ 		root.right.right.right=inst.new Node(7);
+ 		
+ 		System.out.println("==== max width is :" +getMaxWidth(root));
+ 		
+	}
+
+}
