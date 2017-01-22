@@ -4,7 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 //import com.todzhang.GetTreeWidth1.Node;
-// http://www.geeksforgeeks.org/maximum-width-of-a-binary-tree/
 
 public class GetTreeWidthByQueue {
 

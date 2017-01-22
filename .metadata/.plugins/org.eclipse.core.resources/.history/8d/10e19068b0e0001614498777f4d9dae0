@@ -1,6 +1,4 @@
  package com.todzhang;
- 
- //http://www.geeksforgeeks.org/maximum-width-of-a-binary-tree/
 
  public class GetTreeWidth1{
 	 
