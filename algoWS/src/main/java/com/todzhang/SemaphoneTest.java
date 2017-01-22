@@ -1,4 +1,4 @@
-package me.todzhang;
+package com.todzhang;
 
 import java.util.concurrent.Semaphore;
 
