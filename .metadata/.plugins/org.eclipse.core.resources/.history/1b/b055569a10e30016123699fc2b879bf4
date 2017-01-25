@@ -1,0 +1,22 @@
+package com.todzhang;
+
+public class ThreeWayDisjoint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	private static boolean disjoint1(int[]  groupA, int[] groupB, int[] groupC){
+		for ( int i : groupA) {
+			for (int j : groupB) {
+				for (int k : groupC) {
+					if(i==j && j==k){
+						return false;
+					}
+				}
+			}
+		}
+		return true;
+	}
+}
