@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.buildship.ui.wizard.project.import">
+		<item value="/Users/todzhang/dev/git/algo" key="project_location"/>
+	</section>
+	<section name="org.eclipse.buildship.ui.wizard.project.creation">
+		<item value="true" key="use_default_location"/>
+		<item value="/Users/todzhang/dev/git/algo/algoWS" key="project_location"/>
+	</section>
+</section>
