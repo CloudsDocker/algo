@@ -5,7 +5,10 @@ import java.util.Arrays;
 public class PrefixAverage {
 
 	/**
-	 * @param args
+	 * output is:
+	 * input is :[1.0, 2.0, 3.0, 4.0, 5.0, 7.0, 10.0, 20.0, 30.0, 40.0]
+	naiive approacl O(n*n), output is:[1.0, 1.5, 2.0, 2.5, 3.0, 3.6666666666666665, 4.571428571428571, 6.5, 9.11111111111111, 12.2]
+	linear bette approacl O(n), output is:[1.0, 1.5, 2.0, 2.5, 3.0, 3.6666666666666665, 4.571428571428571, 6.5, 9.11111111111111, 12.2]
 	 */
 	public static void main(String[] args) {
 
