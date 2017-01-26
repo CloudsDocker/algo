@@ -5,6 +5,7 @@ public class BinarySearch{
 		System.out.println("found?:"+ binarySearch(data,4,0,data.length));
 	}
 	
+	// this approach will take O(logn), better than linear search, which is O(n)
 	public static boolean binarySearch(int[] data,int target,int low, int high){
 		if(low>high)
 			return false;
