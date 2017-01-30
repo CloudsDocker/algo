@@ -1,6 +1,5 @@
 package com.todzhang;
 
-import org.junit.*;
 
 /**
  * Created by todzhang on 2017/1/8.
