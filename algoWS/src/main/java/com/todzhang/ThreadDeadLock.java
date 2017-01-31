@@ -24,5 +24,12 @@ public class ThreadDeadLock {
             String body=renderBody();
             return header.get()+body+footer.get();
         }
+
+        private String renderBody(){return "";}
+
+        class LoadFileTask implements Callable<String>{
+            public LoadFileTask(String input){}
+            public String call(){ return "";}
+        }
     }
 }
