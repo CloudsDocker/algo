@@ -1,3 +1,5 @@
+import java.util.logging.Logger;
+
 import static java.lang.System.out;
 
 /**
@@ -48,6 +50,8 @@ public class CaesarCipher {
         String answer=cipher.decode(coded);
 
         out.println("=======Messag is :"+answer);
+
+        Logger logger=Logger.getAnonymousLogger();
 
     }
 }
