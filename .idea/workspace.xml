@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4932eaee-ceca-4af9-8c55-cd0bfb0b00d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/SerialAccessToTaskQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algo.iws" />
@@ -59,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SerialAccessToTaskQueue.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SerialAccessToTaskQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/SerialAccessToTaskQueue.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -68,6 +68,16 @@
                 <element signature="e#1280#1281#0" expanded="true" />
                 <element signature="e#1317#1318#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CircularlyLinkedList.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -476,6 +486,7 @@
         <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/ThreadDeadLock.java" />
         <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DemonstrateDeadLock.java" />
         <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/SerialAccessToTaskQueue.java" />
+        <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java" />
       </list>
     </option>
   </component>
@@ -1415,13 +1426,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/todzhang/arrayRemove.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/todzhang/RemoveDupItemFromSortedArray.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/todzhang/arrayRemove.java" />
@@ -1879,6 +1883,14 @@
             <element signature="e#1280#1281#0" expanded="true" />
             <element signature="e#1317#1318#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+          <folding />
         </state>
       </provider>
     </entry>
