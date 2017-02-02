@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4932eaee-ceca-4af9-8c55-cd0bfb0b00d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DoublyLinkedList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/BoundedBufferBySemaphore.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="algo.iws" />
@@ -46,15 +46,9 @@
       <file leaf-file-name="DemonstrateDeadLock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DemonstrateDeadLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="690">
               <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4107#4108#0" expanded="true" />
-                <element signature="e#4157#4158#0" expanded="true" />
-                <element signature="e#4201#4202#0" expanded="true" />
-                <element signature="e#4246#4247#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,10 +58,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-              <folding>
-                <element signature="e#1280#1281#0" expanded="true" />
-                <element signature="e#1317#1318#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,24 +66,29 @@
       <file leaf-file-name="CircularlyLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
+            <state relative-caret-position="990">
               <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DoublyLinkedList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DoublyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
+            <state relative-caret-position="443">
               <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
-              <folding>
-                <element signature="e#2693#2694#0" expanded="true" />
-                <element signature="e#2746#2747#0" expanded="true" />
-                <element signature="e#2777#2778#0" expanded="true" />
-                <element signature="e#2832#2833#0" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoundedBufferBySemaphore.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/BoundedBufferBySemaphore.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,9 +96,52 @@
       <file leaf-file-name="ThreadPoolExecutor.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3027">
+            <state relative-caret-position="4215">
               <caret line="318" column="13" selection-start-line="318" selection-start-column="13" selection-end-line="318" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="e#0#80896#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#16480#16481#0" expanded="false" />
+                <element signature="e#16508#16509#0" expanded="false" />
+                <element signature="e#16568#16569#0" expanded="false" />
+                <element signature="e#16597#16598#0" expanded="false" />
+                <element signature="e#16644#16645#0" expanded="false" />
+                <element signature="e#16679#16680#0" expanded="false" />
+                <element signature="e#16824#16825#0" expanded="false" />
+                <element signature="e#16884#16885#0" expanded="false" />
+                <element signature="e#17029#17030#0" expanded="false" />
+                <element signature="e#17089#17090#0" expanded="false" />
+                <element signature="e#17336#17337#0" expanded="false" />
+                <element signature="e#17409#17410#0" expanded="false" />
+                <element signature="e#25063#25064#0" expanded="false" />
+                <element signature="e#25102#25103#0" expanded="false" />
+                <element signature="e#25293#25294#0" expanded="false" />
+                <element signature="e#25339#25340#0" expanded="false" />
+                <element signature="e#31552#31553#0" expanded="false" />
+                <element signature="e#31595#31596#0" expanded="false" />
+                <element signature="e#31948#31949#0" expanded="false" />
+                <element signature="e#32004#32005#0" expanded="false" />
+                <element signature="e#57238#57239#0" expanded="false" />
+                <element signature="e#57283#57284#0" expanded="false" />
+                <element signature="e#57976#57977#0" expanded="false" />
+                <element signature="e#58037#58038#0" expanded="false" />
+                <element signature="e#58750#58751#0" expanded="false" />
+                <element signature="e#58776#58777#0" expanded="false" />
+                <element signature="e#59415#59416#0" expanded="false" />
+                <element signature="e#59451#59452#0" expanded="false" />
+                <element signature="e#60105#60106#0" expanded="false" />
+                <element signature="e#60135#60136#0" expanded="false" />
+                <element signature="e#61630#61631#0" expanded="false" />
+                <element signature="e#61665#61666#0" expanded="false" />
+                <element signature="e#63465#63466#0" expanded="false" />
+                <element signature="e#63510#63511#0" expanded="false" />
+                <element signature="e#65777#65778#0" expanded="false" />
+                <element signature="e#65815#65816#0" expanded="false" />
+                <element signature="e#67446#67447#0" expanded="false" />
+                <element signature="e#67518#67519#0" expanded="false" />
+                <element signature="e#67915#67916#0" expanded="false" />
+                <element signature="e#67947#67948#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,6 +160,8 @@
                 <element signature="e#18811#18812#0" expanded="false" />
                 <element signature="e#19992#19993#0" expanded="false" />
                 <element signature="e#20062#20063#0" expanded="false" />
+                <element signature="e#27979#27980#0" expanded="false" />
+                <element signature="e#28026#28027#0" expanded="false" />
                 <element signature="e#30919#30920#0" expanded="false" />
                 <element signature="e#30991#30992#0" expanded="false" />
                 <element signature="e#31692#31693#0" expanded="false" />
@@ -175,11 +216,9 @@
       <file leaf-file-name="ThreadDeadLock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/ThreadDeadLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="360">
               <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -503,6 +542,7 @@
         <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/SerialAccessToTaskQueue.java" />
         <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java" />
         <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DoublyLinkedList.java" />
+        <option value="$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/BoundedBufferBySemaphore.java" />
       </list>
     </option>
   </component>
@@ -514,8 +554,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
-    <option name="y" value="286" />
+    <option name="x" value="4" />
+    <option name="y" value="359" />
     <option name="width" value="1280" />
     <option name="height" value="701" />
   </component>
@@ -545,6 +585,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -879,7 +920,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -1351,18 +1391,17 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="286" width="1280" height="701" extended-state="0" />
+    <frame x="4" y="359" width="1280" height="701" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3070326" sideWeight="0.50646204" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3070326" sideWeight="0.49353796" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293919" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3070326" sideWeight="0.49353796" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1371,12 +1410,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37111112" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37111112" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.49353796" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1442,7 +1482,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/todzhang/RemoveDupItemFromSortedArray.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/todzhang/arrayRemove.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/todzhang/RemoveDupItemFromSortedArray.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/todzhang/RemoveDupItemFromSortedArrayLargerThan2.java" />
@@ -1611,10 +1650,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
           <caret line="136" column="17" selection-start-line="136" selection-start-column="17" selection-end-line="136" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#14929#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1622,52 +1657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12045">
           <caret line="853" column="11" selection-start-line="853" selection-start-column="11" selection-end-line="853" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#45697#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#10183#10184#0" expanded="false" />
-            <element signature="e#10231#10232#0" expanded="false" />
-            <element signature="e#11370#11371#0" expanded="false" />
-            <element signature="e#11460#11461#0" expanded="false" />
-            <element signature="e#11497#11498#0" expanded="false" />
-            <element signature="e#11549#11550#0" expanded="false" />
-            <element signature="e#23343#23344#0" expanded="false" />
-            <element signature="e#23431#23432#0" expanded="false" />
-            <element signature="e#23468#23469#0" expanded="false" />
-            <element signature="e#23519#23520#0" expanded="false" />
-            <element signature="e#23763#23764#0" expanded="false" />
-            <element signature="e#23814#23815#0" expanded="false" />
-            <element signature="e#34990#34991#0" expanded="false" />
-            <element signature="e#35017#35018#0" expanded="false" />
-            <element signature="e#35291#35292#0" expanded="false" />
-            <element signature="e#35374#35375#0" expanded="false" />
-            <element signature="e#38470#38471#0" expanded="false" />
-            <element signature="e#38527#38528#0" expanded="false" />
-            <element signature="e#38706#38707#0" expanded="false" />
-            <element signature="e#38733#38734#0" expanded="false" />
-            <element signature="e#38889#38890#0" expanded="false" />
-            <element signature="e#38913#38914#0" expanded="false" />
-            <element signature="e#39082#39083#0" expanded="false" />
-            <element signature="e#39106#39107#0" expanded="false" />
-            <element signature="e#39454#39455#0" expanded="false" />
-            <element signature="e#39482#39483#0" expanded="false" />
-            <element signature="e#39708#39709#0" expanded="false" />
-            <element signature="e#39736#39737#0" expanded="false" />
-            <element signature="e#40030#40031#0" expanded="false" />
-            <element signature="e#40064#40065#0" expanded="false" />
-            <element signature="e#40293#40294#0" expanded="false" />
-            <element signature="e#40321#40322#0" expanded="false" />
-            <element signature="e#40550#40551#0" expanded="false" />
-            <element signature="e#40578#40579#0" expanded="false" />
-            <element signature="e#40781#40782#0" expanded="false" />
-            <element signature="e#40808#40809#0" expanded="false" />
-            <element signature="e#40996#40997#0" expanded="false" />
-            <element signature="e#41046#41047#0" expanded="false" />
-            <element signature="e#41296#41297#0" expanded="false" />
-            <element signature="e#41350#41351#0" expanded="false" />
-            <element signature="e#41470#41471#0" expanded="false" />
-            <element signature="e#41506#41507#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1675,24 +1664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2595">
           <caret line="214" column="34" selection-start-line="214" selection-start-column="34" selection-end-line="214" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#31219#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#15215#15216#0" expanded="false" />
-            <element signature="e#15264#15265#0" expanded="false" />
-            <element signature="e#17078#17079#0" expanded="false" />
-            <element signature="e#17130#17131#0" expanded="false" />
-            <element signature="e#28463#28464#0" expanded="false" />
-            <element signature="e#28508#28509#0" expanded="false" />
-            <element signature="e#28564#28565#0" expanded="false" />
-            <element signature="e#28609#28610#0" expanded="false" />
-            <element signature="e#28672#28673#0" expanded="false" />
-            <element signature="e#28725#28726#0" expanded="false" />
-            <element signature="e#29802#29803#0" expanded="false" />
-            <element signature="e#29841#29842#0" expanded="false" />
-            <element signature="e#29877#29878#0" expanded="false" />
-            <element signature="e#29917#29918#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1700,7 +1671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="27" column="44" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1708,9 +1678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1718,15 +1685,133 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="41" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="507" column="3" selection-start-line="507" selection-start-column="3" selection-end-line="507" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CaesarCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
           <folding>
-            <element signature="e#766#767#0" expanded="false" />
-            <element signature="e#798#799#0" expanded="false" />
-            <element signature="e#4556#4557#0" expanded="false" />
-            <element signature="e#4583#4584#0" expanded="false" />
-            <element signature="e#4784#4785#0" expanded="false" />
-            <element signature="e#4812#4813#0" expanded="false" />
-            <element signature="e#5180#5181#0" expanded="false" />
-            <element signature="e#5204#5205#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/BoundedExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/MyThreadFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/MyAppThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/MyExtendedThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DemonstrateDeadLock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/SerialAccessToTaskQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DoublyLinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4215">
+          <caret line="318" column="13" selection-start-line="318" selection-start-column="13" selection-end-line="318" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#80896#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#16480#16481#0" expanded="false" />
+            <element signature="e#16508#16509#0" expanded="false" />
+            <element signature="e#16568#16569#0" expanded="false" />
+            <element signature="e#16597#16598#0" expanded="false" />
+            <element signature="e#16644#16645#0" expanded="false" />
+            <element signature="e#16679#16680#0" expanded="false" />
+            <element signature="e#16824#16825#0" expanded="false" />
+            <element signature="e#16884#16885#0" expanded="false" />
+            <element signature="e#17029#17030#0" expanded="false" />
+            <element signature="e#17089#17090#0" expanded="false" />
+            <element signature="e#17336#17337#0" expanded="false" />
+            <element signature="e#17409#17410#0" expanded="false" />
+            <element signature="e#25063#25064#0" expanded="false" />
+            <element signature="e#25102#25103#0" expanded="false" />
+            <element signature="e#25293#25294#0" expanded="false" />
+            <element signature="e#25339#25340#0" expanded="false" />
+            <element signature="e#31552#31553#0" expanded="false" />
+            <element signature="e#31595#31596#0" expanded="false" />
+            <element signature="e#31948#31949#0" expanded="false" />
+            <element signature="e#32004#32005#0" expanded="false" />
+            <element signature="e#57238#57239#0" expanded="false" />
+            <element signature="e#57283#57284#0" expanded="false" />
+            <element signature="e#57976#57977#0" expanded="false" />
+            <element signature="e#58037#58038#0" expanded="false" />
+            <element signature="e#58750#58751#0" expanded="false" />
+            <element signature="e#58776#58777#0" expanded="false" />
+            <element signature="e#59415#59416#0" expanded="false" />
+            <element signature="e#59451#59452#0" expanded="false" />
+            <element signature="e#60105#60106#0" expanded="false" />
+            <element signature="e#60135#60136#0" expanded="false" />
+            <element signature="e#61630#61631#0" expanded="false" />
+            <element signature="e#61665#61666#0" expanded="false" />
+            <element signature="e#63465#63466#0" expanded="false" />
+            <element signature="e#63510#63511#0" expanded="false" />
+            <element signature="e#65777#65778#0" expanded="false" />
+            <element signature="e#65815#65816#0" expanded="false" />
+            <element signature="e#67446#67447#0" expanded="false" />
+            <element signature="e#67518#67519#0" expanded="false" />
+            <element signature="e#67915#67916#0" expanded="false" />
+            <element signature="e#67947#67948#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1744,6 +1829,8 @@
             <element signature="e#18811#18812#0" expanded="false" />
             <element signature="e#19992#19993#0" expanded="false" />
             <element signature="e#20062#20063#0" expanded="false" />
+            <element signature="e#27979#27980#0" expanded="false" />
+            <element signature="e#28026#28027#0" expanded="false" />
             <element signature="e#30919#30920#0" expanded="false" />
             <element signature="e#30991#30992#0" expanded="false" />
             <element signature="e#31692#31693#0" expanded="false" />
@@ -1794,131 +1881,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3027">
-          <caret line="318" column="13" selection-start-line="318" selection-start-column="13" selection-end-line="318" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="507" column="3" selection-start-line="507" selection-start-column="3" selection-end-line="507" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CaesarCipher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="49" column="43" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/BoundedExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/MyThreadFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#424#425#0" expanded="false" />
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#561#562#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/MyAppThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#597#598#0" expanded="false" />
-            <element signature="e#638#639#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/MyExtendedThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/ThreadDeadLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="360">
           <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DemonstrateDeadLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="46" column="59" selection-start-line="46" selection-start-column="59" selection-end-line="46" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4107#4108#0" expanded="true" />
-            <element signature="e#4157#4158#0" expanded="true" />
-            <element signature="e#4201#4202#0" expanded="true" />
-            <element signature="e#4246#4247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/SerialAccessToTaskQueue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding>
-            <element signature="e#1280#1281#0" expanded="true" />
-            <element signature="e#1317#1318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/CircularlyLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="66" column="33" selection-start-line="66" selection-start-column="33" selection-end-line="66" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/DoublyLinkedList.java">
+    <entry file="file://$PROJECT_DIR$/algoWS/src/main/java/com/todzhang/BoundedBufferBySemaphore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="95" column="41" selection-start-line="95" selection-start-column="41" selection-end-line="95" selection-end-column="41" />
-          <folding>
-            <element signature="e#2693#2694#0" expanded="true" />
-            <element signature="e#2746#2747#0" expanded="true" />
-            <element signature="e#2777#2778#0" expanded="true" />
-            <element signature="e#2832#2833#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
