@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public class CyclicBarrierDemo {
 
 	/**
-	 * CyclicBarrier is usfule for kind of map-reduce pattern
+	 * CyclicBarrier is useful for kind of map-reduce pattern
 	 * the reduce job will start once all Map jobs done, 
 	 * @param args
 	 */

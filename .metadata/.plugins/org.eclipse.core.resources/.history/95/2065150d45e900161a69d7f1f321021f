@@ -1,0 +1,29 @@
+package com.todzhang;
+
+import java.util.concurrent.CyclicBarrier;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.atomic.AtomicInteger;
+
+public class PutTakeTest {
+
+	private static final ExecutorService pool=Executors.newCachedThreadPool();
+	private final AtomicInteger putSum=new AtomicInteger(0);
+	private final AtomicInteger takeSum=new AtomicInteger(0);
+	private final CyclicBarrier barrier;
+	private final BoundedBufferBySemaphore<Integer> bb;
+	private final int nTrials, nPairs;
+	public PutTakeTest(int capacity, int nPairs, int nTrails){
+		bb=new BoundedBufferBySemaphore<>(capacity);
+		this.nPairs=nPairs;
+		this.nTrials=nTrails;
+		barrier=new CyclicBarrier(2*nPairs+1);
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

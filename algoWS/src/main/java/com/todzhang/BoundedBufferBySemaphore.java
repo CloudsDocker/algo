@@ -1,4 +1,7 @@
+package com.todzhang;
+
 import java.util.concurrent.Semaphore;
+
 
 /**
  * Created by todzhang on 2017/2/2.
@@ -45,7 +48,9 @@ public class BoundedBufferBySemaphore<E>{
         return item;
     }
 
-    private synchronized void doInsert(E x){
+//    private void doInsert(E x){
+        private synchronized void doInsert(E x){
+
         int i=putPosition;
         items[i]=x;
         putPosition=(++i ==items.length)?0:i;
