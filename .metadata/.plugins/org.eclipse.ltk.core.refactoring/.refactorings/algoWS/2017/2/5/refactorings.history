@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.todzhang.TreeTester&apos; to &apos;TreeBinaryTreeTester&apos;&#x0A;- Original project: &apos;algoWS&apos;&#x0A;- Original element: &apos;com.todzhang.TreeTester&apos;&#x0A;- Renamed element: &apos;com.todzhang.TreeBinaryTreeTester&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TreeTester&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.todzhang{TreeTester.java[TreeTester" matchStrategy="1" name="TreeBinaryTreeTester" qualified="false" references="true" similarDeclarations="false" stamp="1486218226513" textual="false" version="1.0"/>
+</session>

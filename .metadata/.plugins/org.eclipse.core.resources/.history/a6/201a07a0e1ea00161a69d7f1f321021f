@@ -1,0 +1,25 @@
+package com.todzhang;
+
+/**
+ * This is sample class from https://www.youtube.com/watch?v=M6lYob8STMI
+ * @author todzhang
+ *
+ */
+public class TreeTester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	
+	public class Node<E>{
+		E key;
+		String name;
+		public Node(E inKey,String inName){
+			this.key=inKey;
+			this.name=inName;
+		}
+		
+	}
+}
