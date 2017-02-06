@@ -1,0 +1,10 @@
+package com.todzhang;
+
+public abstract class ToddAbstractBinaryTree<T> extends ToddAbstractTree<T> implements ToddIBinaryTree<T> {
+
+	public Position<T> sibling(Position<T> p){
+		Position<T> parent=parent(p);
+		if (parent==null)
+			return null; // p must be root, as it has no parent
+	}
+}

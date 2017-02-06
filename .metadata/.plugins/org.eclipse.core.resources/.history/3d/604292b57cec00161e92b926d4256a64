@@ -1,0 +1,11 @@
+package com.todzhang;
+
+public class ToddLinkedBinaryTree extends ToddAbstractBinaryTree<T> {
+
+	/*
+	 * nested Node class
+	 */
+	protected static class Node<T> implements Position<T>{
+		
+	}
+}

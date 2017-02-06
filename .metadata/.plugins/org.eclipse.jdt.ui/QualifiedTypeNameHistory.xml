@@ -6,4 +6,17 @@
 <fullyQualifiedTypeName name="com.todzhang.GetTreeWidthByQueue.Node"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+<fullyQualifiedTypeName name="java.util.concurrent.atomic.AtomicInteger"/>
+<fullyQualifiedTypeName name="com.todzhang.BoundedBufferBySemaphore"/>
+<fullyQualifiedTypeName name="java.util.concurrent.CyclicBarrier"/>
+<fullyQualifiedTypeName name="com.todzhang.PutTakeTest.Consumer"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="com.todzhang.PutTakeTest"/>
+<fullyQualifiedTypeName name="com.todzhang.TreeTester.Node"/>
+<fullyQualifiedTypeName name="com.todzhang.TreeTester"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

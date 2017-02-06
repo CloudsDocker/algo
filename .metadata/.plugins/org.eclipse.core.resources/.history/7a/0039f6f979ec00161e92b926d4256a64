@@ -1,0 +1,5 @@
+package com.todzhang;
+
+public abstract class ToddAbstractBinaryTree extends ToddAbstractTree<T> implements ToddIBinaryTree<T> {
+
+}

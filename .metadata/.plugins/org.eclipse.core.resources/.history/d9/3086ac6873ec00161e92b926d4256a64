@@ -1,0 +1,8 @@
+package com.todzhang;
+
+public interface ToddITree<T> extends Iterable<T> {
+	Position<T> root();
+	Position<T> parent(Position<T> p) throws IllegalArgumentException;
+	Iterable<Position<T>> children(Position<T> p) throws IllegalArgumentException;
+
+}

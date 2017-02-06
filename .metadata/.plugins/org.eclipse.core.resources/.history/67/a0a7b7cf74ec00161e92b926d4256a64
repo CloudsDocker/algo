@@ -1,0 +1,5 @@
+package com.todzhang;
+
+public abstract class ToddAbstractTree<T> implements ToddITree<T> {
+
+}
