@@ -198,7 +198,7 @@ public class ToddLinkedBinaryTree<T> extends ToddAbstractBinaryTree<T> {
 			child.setParent(node.getParent());
 		}
 		if(node==root){
-			root=child;
+			
 		}
 		}
 		

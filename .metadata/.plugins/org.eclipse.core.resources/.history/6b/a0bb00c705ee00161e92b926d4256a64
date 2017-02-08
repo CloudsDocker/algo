@@ -195,10 +195,7 @@ public class ToddLinkedBinaryTree<T> extends ToddAbstractBinaryTree<T> {
 			throw new IllegalArgumentException("p has two position ");
 		Node<T> child=(node.getLeft()!=null?node.getLeft():node.getRight());
 		if(child!=null){
-			child.setParent(node.getParent());
-		}
-		if(node==root){
-			root=child;
+			
 		}
 		}
 		

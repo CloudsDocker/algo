@@ -188,18 +188,5 @@ public class ToddLinkedBinaryTree<T> extends ToddAbstractBinaryTree<T> {
 		}
 		
 		
-		// remove the node of postion p and replaces it with its subtree
-		public T remove(Position<T> p) throws IllegalArgumentException{
-		Node<T> node=validate(p);
-		if(numChildren(p)==2)
-			throw new IllegalArgumentException("p has two position ");
-		Node<T> child=(node.getLeft()!=null?node.getLeft():node.getRight());
-		if(child!=null){
-			child.setParent(node.getParent());
-		}
-		if(node==root){
-			root=child;
-		}
-		}
 		
 }
