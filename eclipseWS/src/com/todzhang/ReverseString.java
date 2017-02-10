@@ -118,15 +118,3 @@ Public String reverse9(String input){
 
 
 
-Regards,
-
-Todd Zhang PMP 张磊 
-HSBC Operations, Services & Technology (HOST) GB&M, Project Management | The Hongkong and Shanghai Banking Corporation Limited
-29/F, HSBC Building, Shanghai IFC, 8 Century Avenue, Shanghai 200120
-___________________________________________________________________________________
-
-Phone.     86-21-38883959; 71862183959
-Mobile.      135 2430 6108
-Email.       todd.zhang@hsbc.com.cn
-___________________________________________________________________________________
-
