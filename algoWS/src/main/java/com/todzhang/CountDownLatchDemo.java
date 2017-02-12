@@ -1,4 +1,4 @@
-package com.todzhang;
+package me.todzhang;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;

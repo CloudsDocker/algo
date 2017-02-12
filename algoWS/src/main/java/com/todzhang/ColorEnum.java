@@ -1,4 +1,4 @@
-package com.todzhang;
+package dustin.examples;
 
 import java.awt.Color;
 

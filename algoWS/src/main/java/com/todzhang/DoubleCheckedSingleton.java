@@ -1,4 +1,4 @@
-package com.todzhang;
+package me.todzhang;
 
 import java.io.Serializable;
 

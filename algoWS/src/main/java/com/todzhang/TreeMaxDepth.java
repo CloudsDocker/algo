@@ -1,4 +1,4 @@
-package com.todzhang;
+package me.todzhang;
 
 public class TreeMaxDepth {
 

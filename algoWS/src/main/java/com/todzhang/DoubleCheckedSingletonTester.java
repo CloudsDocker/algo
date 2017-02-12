@@ -1,4 +1,4 @@
-package com.todzhang;
+package me.todzhang;
 import static java.lang.System.out;
 
 public class DoubleCheckedSingletonTester{
