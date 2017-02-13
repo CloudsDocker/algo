@@ -1,0 +1,14 @@
+package com.todzhang;
+
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+/**
+ * Implement an own semaphore based on Lock
+ * java.util.concurrent is NOT implemented like this.
+ * @author todzhang
+ *
+ */
+public class SemaphoreOnLock {
+private final Lock lock=new ReentrantLock();
+}

@@ -1,0 +1,10 @@
+package com.todzhang;
+/**
+ * Implement an own semaphore based on Lock
+ * java.util.concurrent is NOT implemented like this.
+ * @author todzhang
+ *
+ */
+public class SemaphoreOnLock {
+
+}
