@@ -1,0 +1,17 @@
+package com.todzhang;
+
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class ConditionBoundedBuffered {
+
+	private final Lock lock=new ReentrantLock();
+	private final Condition notFull=lock.newCondition();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}

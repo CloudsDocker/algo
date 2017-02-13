@@ -1,0 +1,52 @@
+package com.todzhang;
+
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
+public class ConditionBoundedBuffered<T> {
+
+	private final Lock lock=new ReentrantLock();
+	private final Condition notFull=lock.newCondition();
+	private final Condition notEmpty=lock.newCondition();
+	private final T[] items =(T[])new Object[10]; // buffer size 10
+	
+	private int tail,head,count;
+	
+	// block until : not full
+	public void put(T x) throws InterruptedException{
+		lock.lock();
+		
+		try {
+			while(count==items.length)
+				notFull.await();
+			items[tail]=x;
+			if(++tail==items.length)
+				tail=0;
+			++count;
+			notEmpty.signal();
+
+		} finally {
+			lock.unlock();
+		}
+	}
+	
+	// block until: notEmpty
+	public T take() throws InterruptedException{
+		lock.lock();
+		try {
+			
+			while(count<=0)
+				notEmpty.await();
+			T x
+		} finally {
+			lock.unlock();
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+	}
+
+}
