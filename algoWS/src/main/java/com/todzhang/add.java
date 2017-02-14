@@ -1,5 +1,5 @@
 
-## add in Java
+// add in Java
 public static void add(int[] n1, int[] n2,int[] sum){
 	int position=n1.length-1;
 	int carry=0;
@@ -19,15 +19,7 @@ sum[0]=carry;
 }
 
 
-Notes:
-
-To print array:
-Import java.util.Arrays;
-Arrays.toString(ary);
-Arrays.deepToString(ary);
 
 
-Public & private key:
-nano .ssh/authorized_keys
-load private key in Putty
+
  
