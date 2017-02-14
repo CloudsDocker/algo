@@ -19,4 +19,19 @@
 <fullyQualifiedTypeName name="com.todzhang.TreeTester.Node"/>
 <fullyQualifiedTypeName name="com.todzhang.TreeTester"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Iterable"/>
+<fullyQualifiedTypeName name="com.todzhang.ToddAbstractTree"/>
+<fullyQualifiedTypeName name="com.todzhang.ToddITree"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.todzhang.Position"/>
+<fullyQualifiedTypeName name="com.todzhang.ToddLinkedBinaryTree.Node"/>
+<fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+<fullyQualifiedTypeName name="com.todzhang.ToddLinkedBinaryTree"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantLock"/>
+<fullyQualifiedTypeName name="com.todzhang.ConditionBoundedBuffered"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
+<fullyQualifiedTypeName name="java.util.concurrent.locks.AbstractQueuedSynchronizer"/>
 </qualifiedTypeNameHistroy>

@@ -1,8 +1,0 @@
-package com.todzhang;
-
-public abstract class ToddAbstractBinaryTree<T> extends ToddAbstractTree<T> implements ToddIBinaryTree<T> {
-
-	public Position<T> sibling(Position<T> p){
-		
-	}
-}

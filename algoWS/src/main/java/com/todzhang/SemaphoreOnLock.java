@@ -1,5 +1,6 @@
 package com.todzhang;
 
+import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -12,6 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  */
 public class SemaphoreOnLock {
+//	AbstractQueuedSynchronizer aqs=new 
 	private final Lock lock = new ReentrantLock();
 	// condition predicate : permitAvailable (permits>0)
 	private final Condition permitsAvailable = lock.newCondition();
