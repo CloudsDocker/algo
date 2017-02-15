@@ -1,0 +1,29 @@
+package com.todzhang;
+
+import java.util.Collections;
+import java.util.List;
+
+public class TreePrinter {
+
+	public static int getHeight(TreeNode root){
+		if(root==null)
+			return 0;
+		return 1+Math.max(getHeight(root.left), getHeight(root.right));
+	}
+	
+	public static void printTree(TreeNode root){
+		int height=getHeight(root);
+		printNodeWorker(Collections.singletonList(root), 1, height);
+		
+	}
+	
+	private static void printNodeWorker(List<TreeNode> nodes, int level,int height){
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeNode root=TreeBuilder.initTree();
+	}
+
+}

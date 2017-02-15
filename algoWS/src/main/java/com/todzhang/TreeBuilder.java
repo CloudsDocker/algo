@@ -1,4 +1,4 @@
-package me.todzhang;
+package com.todzhang;
 
 public class TreeBuilder {
 
@@ -13,6 +13,7 @@ public class TreeBuilder {
 		TreeNode node6=new TreeNode(6);
 		TreeNode node7=new TreeNode(7);
 		TreeNode node8=new TreeNode(8);
+		TreeNode node9=new TreeNode(9);
 		
 		root.left=node2;
 		root.right=node3;
@@ -25,6 +26,7 @@ public class TreeBuilder {
 		
 		node4.left=node8;
 		
+		node7.right=node9;
 		return root;
 	}
 }

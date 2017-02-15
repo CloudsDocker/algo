@@ -1,0 +1,42 @@
+package com.todzhang;
+
+import java.util.Collections;
+import java.util.List;
+
+public class TreePrinter {
+
+	public static int getHeight(TreeNode root){
+		if(root==null)
+			return 0;
+		return 1+Math.max(getHeight(root.left), getHeight(root.right));
+	}
+	
+	public static void printTree(TreeNode root){
+		// get tree height
+		int height=getHeight(root);
+		// print the tree node recursively
+		printNodeWorker(Collections.singletonList(root), 1, height);
+	}
+	
+	private static void printNodeWorker(List<TreeNode> nodes, int level,int height){
+		
+		if(nodes.isEmpty()){
+			return;
+		}
+		
+		int floor=height-level; // if height=4 , so floor =4-1=3
+		int edgeLines=(int)Math.pow(2, (Math.max(floor-1, 0))); 
+		// floor -1 =2, so lines is 2*2=4
+		// this is been 2 times N
+		int firstSpaces=(int)Math.pow(2, floor)-1; 
+		// floor is 3, so it's return 7
+		int betweenSpaces=(int)Math.pow(2, (floor+1))-1;
+		// floor + 1=4, so betweenSpaces is 15
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeNode root=TreeBuilder.initTree();
+	}
+
+}
