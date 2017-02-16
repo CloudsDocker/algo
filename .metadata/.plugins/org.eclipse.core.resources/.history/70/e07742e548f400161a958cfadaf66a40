@@ -6,7 +6,6 @@ import java.util.List;
 
 public class TreePrinter {
 
-	
 	public static int getHeight(TreeNode root){
 		if(root==null)
 			return 0;
@@ -101,8 +100,7 @@ public class TreePrinter {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-//		TreeNode root=TreeBuilder.initTree();
-		TreeNode root=TreeBuilder.initCompleteBST();
+		TreeNode root=TreeBuilder.initTree();
 		printTree(root);
 	}
 

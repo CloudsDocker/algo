@@ -102,7 +102,7 @@ public class TreePrinter {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 //		TreeNode root=TreeBuilder.initTree();
-		TreeNode root=TreeBuilder.initCompleteBST();
+		TreeNode root=TreeBuilder.initCompleteBST()();
 		printTree(root);
 	}
 

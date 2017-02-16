@@ -39,6 +39,8 @@ public static TreeNode initCompleteBST(){
 		TreeNode node5=new TreeNode(5);
 		TreeNode node6=new TreeNode(6);
 		TreeNode node7=new TreeNode(7);
+		TreeNode node8=new TreeNode(8);
+		TreeNode node9=new TreeNode(9);
 		
 		root.left=node2;
 		root.right=node3;
@@ -49,6 +51,9 @@ public static TreeNode initCompleteBST(){
 		node3.left=node6;
 		node3.right=node7;
 		
+		node4.left=node8;
+		
+		node7.right=node9;
 		return root;
 	}
 	
