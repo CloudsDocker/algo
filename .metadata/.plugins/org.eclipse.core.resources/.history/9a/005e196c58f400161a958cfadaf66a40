@@ -49,10 +49,6 @@ public class ConstructTreeByInOrderAndPosOrder {
 		(pIndex.index)--;
 		// remove the index
 		
-		// if no children, return the node
-		if(nStart==nEnd){
-			return focusRoot;
-		}
 		
 		int nPosInRoot=0;
 		

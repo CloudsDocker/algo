@@ -49,10 +49,6 @@ public class ConstructTreeByInOrderAndPosOrder {
 		(pIndex.index)--;
 		// remove the index
 		
-		// if no children, return the node
-		if(nStart==nEnd){
-			return focusRoot;
-		}
 		
 		int nPosInRoot=0;
 		
@@ -65,7 +61,7 @@ public class ConstructTreeByInOrderAndPosOrder {
 			}
 		}
 		focusRoot.right=buildTree(in, post, nPosInRoot+1, nEnd, pIndex);
-		focusRoot.left=buildTree(in,post,nStart,nPosInRoot-1,pIndex);
+		focusRoot.left=buildTree(in,post,nStart,nPosInRoot,pIndex);
 
 //		focusRoot.left=buildTree(Arrays.copyOfRange(in, 0, nPosInRoot), Arrays.copyOfRange(post, 0, nPosInRoot));
 //		focusRoot.right=buildTree(Arrays.copyOfRange(in, nPosInRoot+1,in.length-1), Arrays.copyOfRange(post, nPosInRoot+1,post.length-1));

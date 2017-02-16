@@ -13,10 +13,8 @@ public class ConstructTreeByInOrderAndPosOrder {
 		// in post order array, the last element is root
 		
 		int nRoot=aryPostOrder[aryPostOrder.length-1];
-		Index index=new Index();
-		index.index=aryPostOrder.length-1;
 		// to construct tree from in-order and post-order traverse
-		TreeNode root=buildTree(aryInOrder, aryPostOrder,0,aryPostOrder.length-1,index);
+		TreeNode root=buildTree(aryInOrder, aryPostOrder);
 		TreePrinter.printTree(root);
 	}
 	
@@ -25,35 +23,20 @@ public class ConstructTreeByInOrderAndPosOrder {
 		int index;
 	}
 	
-	private static TreeNode buildTree(int[] in, int[] post, int nStart, int nEnd, Index pIndex){
-//		if(in.length==1){
-//			return new TreeNode(in[0]);
-//		}
-//
-//		if(post.length==1){
-//			return new TreeNode(post[0]);
-//		}
-		
-		// base case
-		if(nStart>nEnd){
-			return null;
+	private static TreeNode buildTree(int[] in, int[] post){
+		if(in.length==1){
+			return new TreeNode(in[0]);
 		}
-		
-		
+
+		if(post.length==1){
+			return new TreeNode(post[0]);
+		}
 
 //		if(in.length<1 || post.length<1)
 //			return null;
 		
-		int nRoot=post[pIndex.index];
+		int nRoot=post[post.length-1];
 		TreeNode focusRoot=new TreeNode(nRoot);
-		(pIndex.index)--;
-		// remove the index
-		
-		// if no children, return the node
-		if(nStart==nEnd){
-			return focusRoot;
-		}
-		
 		int nPosInRoot=0;
 		
 		// find position index of root element
@@ -64,9 +47,7 @@ public class ConstructTreeByInOrderAndPosOrder {
 				break;
 			}
 		}
-		focusRoot.right=buildTree(in, post, nPosInRoot+1, nEnd, pIndex);
-		focusRoot.left=buildTree(in,post,nStart,nPosInRoot-1,pIndex);
-
+		
 //		focusRoot.left=buildTree(Arrays.copyOfRange(in, 0, nPosInRoot), Arrays.copyOfRange(post, 0, nPosInRoot));
 //		focusRoot.right=buildTree(Arrays.copyOfRange(in, nPosInRoot+1,in.length-1), Arrays.copyOfRange(post, nPosInRoot+1,post.length-1));
 		return focusRoot;
