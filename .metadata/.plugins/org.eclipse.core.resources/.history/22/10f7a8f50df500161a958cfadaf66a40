@@ -1,0 +1,14 @@
+package com.todzhang;
+
+public class TreeGetMinDepth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	private static TreeNode minDepth(TreeNode root){
+		
+	}
+
+}

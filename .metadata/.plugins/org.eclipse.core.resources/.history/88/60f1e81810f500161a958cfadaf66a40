@@ -1,0 +1,12 @@
+package com.todzhang;
+
+public class ConstructTreeByPreOrderAndInOrder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TreeNode root=TreeBuilder.initCompleteBST();
+		TreePrinter.printTree(root);
+	}
+
+}

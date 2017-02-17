@@ -1,0 +1,17 @@
+package com.todzhang;
+
+public class TreeGetMinDepth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	private static int minDepth(TreeNode root){
+		if(root==null){
+			return Integer.MAX_VALUE;
+		}
+		return Math.min(minDepth(root.left), minDepth(root.right))+1;
+	}
+
+}
