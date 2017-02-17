@@ -1,5 +1,7 @@
 package com.todzhang;
 
+import java.util.Arrays;
+
 public class ConstructTreeByInOrderAndPosOrder {
 
 	public static void main(String[] args) {
@@ -24,11 +26,23 @@ public class ConstructTreeByInOrderAndPosOrder {
 	}
 	
 	private static TreeNode buildTree(int[] in, int[] post, int nStart, int nEnd, Index pIndex){
+//		if(in.length==1){
+//			return new TreeNode(in[0]);
+//		}
+//
+//		if(post.length==1){
+//			return new TreeNode(post[0]);
+//		}
 		
 		// base case
 		if(nStart>nEnd){
 			return null;
 		}
+		
+		
+
+//		if(in.length<1 || post.length<1)
+//			return null;
 		
 		int nRoot=post[pIndex.index];
 		TreeNode focusRoot=new TreeNode(nRoot);
