@@ -1,0 +1,72 @@
+Oracle SQL:
+SELECT DISTINCT OWNER FROM ALL_OBJECTS;
+
+The easiest way to improve search efficiency on a set of data is to put it in a data structure that allows more efficient searching.
+What data structures can be searched more efficiency than O(n)? Binary tree can be searched in O(log(n)). Arrays and hash tables both have constant time element look up (has tables have worse-case lookup of O(n) but the average case is O(1)).
+Then need to determine which data structure to be used. If the underlying characters are just ASCII, then a array[128] would be enough. But characters are UNICODe, then it need 100,000 (100K) array, which is a concern of memory, so hash table would be a better option, which only keep exist characters.
+In general, arrays are a better choice for long strings with a limited set of possible characters values, hash tables are more efficient for shorter strings or when there are many possible character values.  
+
+
+Server refused our key
+authorized_key -> authorized_keys
+
+```java
+import java.util.*;
+import java.lang.Character;
+
+public class FindFirstNonRepeatChar{
+
+   public static void main(String[] args){
+        System.out.println("==== start ===");
+		System.out.println("==== the first non-repeat characters : "+findFirstNonRepeatChar("aasssueeessgg"));
+		System.out.println("==== the first non-repeat characters [enhanced version] : "+findFirstNonRepeatChar2("aasssueeessgg"));
+   }
+
+
+     private static Character findFirstNonRepeatChar(String input){
+		Map<Character,Integer> charCounts=new LinkedHashMap<Character,Integer>();
+		// save each element to hash table
+		for(int i=0;i<input.length();i++){
+			if(!charCounts.containsKey(input.charAt(i))){
+				charCounts.put(input.charAt(i),0);
+			}
+			charCounts.put(input.charAt(i),charCounts.get(input.charAt(i))+1);
+		}
+		
+		// to find the first non repeat character
+		for(Character theChar: charCounts.keySet()){
+			if(charCounts.get(theChar)<2){
+				return theChar;
+			}
+		}
+		return null;
+     }
+	 enum COUNT{
+		SINGLE,MULTIPLE
+	 }
+	 // Better solution, as the initial solution has some performance enhancement room
+	 // such as the map keep Integer need to be created, discarded each time
+	 // but it's only have two state, single or more than one
+	  private static Character findFirstNonRepeatChar2(String input){
+		Map<Character,COUNT> charCounts=new LinkedHashMap<Character,COUNT>();
+		// save each element to hash table
+		for(int i=0;i<input.length();i++){
+			if(!charCounts.containsKey(input.charAt(i))){
+				charCounts.put(input.charAt(i),COUNT.SINGLE);
+			}
+			else{
+				charCounts.put(input.charAt(i),COUNT.MULTIPLE);
+			}
+		}
+		
+		// to find the first non repeat character
+		for(Character theChar: charCounts.keySet()){
+			if(charCounts.get(theChar)==COUNT.SINGLE){
+				return theChar;
+			}
+		}
+		return null;
+     }
+}
+
+```
