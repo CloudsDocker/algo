@@ -1,6 +1,3 @@
-import java.util.HashSet;
-import java.util.Set;
-
 //Even simpler with Java 8 (in my opinion):
 
 public class removeDup {
@@ -31,12 +28,12 @@ public class removeDup {
 	}
 
 	// =====================
-//Ashish Agarwal said...
-//In removeDuplicates method,
-//	pos variable
-//	is not required
+Ashish Agarwal said...
+In removeDuplicates method,
+	pos variable
+	is not required
 
-	public static String removeDuplicates2(String word) {
+	public static String removeDuplicates(String word) {
 		if (word == null || word.length() < 2) {
 			return word;
 		}
@@ -88,7 +85,7 @@ public class removeDup {
 		 * creates String from character array. This method will work even if
 		 * String contains more than one duplicate character.
 		 */
-		public static String removeDuplicates3(String word) {
+		public static String removeDuplicates(String word) {
 			if (word == null || word.length() < 2) {
 				return word;
 			}
@@ -131,7 +128,7 @@ public class removeDup {
         ASCII[input.charAt(0)] = true;
 
         int dupIndex = 1;
-        for (int i = 1; i<input.length(); i++) {
+        for (int i = 1; i &lt; input.length(); i++) {
             if (!ASCII[input.charAt(i)]) {
                 characters[dupIndex] = characters[i];
                 ++dupIndex;

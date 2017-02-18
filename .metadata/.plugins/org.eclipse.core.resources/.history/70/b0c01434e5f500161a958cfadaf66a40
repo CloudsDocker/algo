@@ -88,7 +88,7 @@ public class removeDup {
 		 * creates String from character array. This method will work even if
 		 * String contains more than one duplicate character.
 		 */
-		public static String removeDuplicates3(String word) {
+		public static String removeDuplicates(String word) {
 			if (word == null || word.length() < 2) {
 				return word;
 			}
@@ -131,7 +131,7 @@ public class removeDup {
         ASCII[input.charAt(0)] = true;
 
         int dupIndex = 1;
-        for (int i = 1; i<input.length(); i++) {
+        for (int i = 1; i &lt; input.length(); i++) {
             if (!ASCII[input.charAt(i)]) {
                 characters[dupIndex] = characters[i];
                 ++dupIndex;
