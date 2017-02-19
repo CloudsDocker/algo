@@ -10,7 +10,6 @@ public class RemoveChars {
 		String input="hello world!";
 		String remove="eod";
 		System.out.println(" === after remove ====:"+removeChars(input, remove));
-		// output is :  === after remove ====:hll wrl!
 	}
 
 	

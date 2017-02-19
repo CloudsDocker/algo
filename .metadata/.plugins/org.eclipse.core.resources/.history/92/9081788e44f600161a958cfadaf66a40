@@ -10,7 +10,6 @@ public class RemoveChars {
 		String input="hello world!";
 		String remove="eod";
 		System.out.println(" === after remove ====:"+removeChars(input, remove));
-		// output is :  === after remove ====:hll wrl!
 	}
 
 	
@@ -36,7 +35,7 @@ public class RemoveChars {
 		//save the origional length now, as input array will be updated later, the length maybe changed.
 		while(src<len){
 			if(!flags[(int)s[src]]){
-				s[dst++]=s[src];
+				s[++dst]=s[src];
 			}
 			src++;
 		}
