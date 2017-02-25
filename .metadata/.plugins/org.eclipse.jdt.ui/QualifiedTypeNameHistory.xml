@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="com.todzhang.GetTreeWidthByQueue.Node"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
 <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
@@ -23,7 +22,6 @@
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
 <fullyQualifiedTypeName name="com.todzhang.ToddAbstractTree"/>
 <fullyQualifiedTypeName name="com.todzhang.ToddITree"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.todzhang.Position"/>
 <fullyQualifiedTypeName name="com.todzhang.ToddLinkedBinaryTree.Node"/>
 <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
@@ -34,4 +32,18 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.concurrent.locks.Condition"/>
 <fullyQualifiedTypeName name="java.util.concurrent.locks.AbstractQueuedSynchronizer"/>
+<fullyQualifiedTypeName name="com.todzhang.SimulatedCAS"/>
+<fullyQualifiedTypeName name="me.todzhang.TreeBuilder"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="me.todzhang.TreeNode"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.todzhang.ConstructTreeByInOrderAndPosOrder.Index"/>
+<fullyQualifiedTypeName name="com.todzhang.TreeBuilder"/>
+<fullyQualifiedTypeName name="com.todzhang.ConstructTreeByPreOrderAndInOrder.Index"/>
+<fullyQualifiedTypeName name="com.todzhang.TreeNode"/>
+<fullyQualifiedTypeName name="com.todzhang.TreePrinter"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.SecurityManager"/>
 </qualifiedTypeNameHistroy>

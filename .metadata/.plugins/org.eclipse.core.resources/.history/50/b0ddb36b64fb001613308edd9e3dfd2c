@@ -1,4 +1,4 @@
-package com.todzhang;
+package org.todzhang;
 
 
 import java.util.HashSet;
@@ -55,7 +55,7 @@ public class removeDup {
 				characters[i] = 0;
 			}
 		}
-		return new String(characters);
+		return toUniqueString(characters);
 	}
 
 	// ===============
@@ -65,7 +65,7 @@ public class removeDup {
 	 *
 	 * @author Javin Paul
 	 */
-//	public class RemoveDuplicateCharacters {
+	public class RemoveDuplicateCharacters {
 
 		public static void main(String args[]) {
 
@@ -125,7 +125,7 @@ public class removeDup {
 		 * memory of constant size.
 		 */
 	public static String removeDuplicatesFromString(String input) {
-        if (input == null || input.length() < 2) {
+        if (input == null || input.length() &lt; 2) {
             return input;
         }
 
@@ -175,4 +175,4 @@ public class removeDup {
 	 * null Output: null Input : Output: Input : aaabbb Output: ab Input :
 	 * abababa Output: ab
 	 */
-//}
+}
