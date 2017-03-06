@@ -1,6 +1,7 @@
 public class Permutations {
     private boolean[] used;
-    private StringBuilder out = new StringBuilder();
+    private StringBuilder out = new StringBuilder(); // use stringbuffers fof better performance
+    
     private final String in;
 
     public Permutations( final String str ){
