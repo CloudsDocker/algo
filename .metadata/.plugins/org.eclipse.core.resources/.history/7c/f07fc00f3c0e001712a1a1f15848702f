@@ -1,0 +1,181 @@
+package com.todzhang;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicLong;
+
+public class RemoveDuplicateString {
+
+	/*
+	Remove Duplicate Letters
+
+	Difficulty: Hard
+
+	Given a string which contains only lowercase letters, remove duplicate letters so that every letter appear once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+
+	Example:
+
+	Given "bcabc"
+	Return "abc"
+
+	Given "cbacdcbc"
+	Return "acdb"
+
+	Credits:
+	Special thanks to @dietpepsi for adding this problem and creating all test cases.
+
+
+
+	prototype:
+	1. foreach input and construct map . P.S. what kind of map? keep insert order? sorted? -> Concurrent HashMap
+	2. map<"b",2>
+	map<"c",2>
+	3. foreach input again, if cnt>1, remove it, if cnt =1, append to result
+	4. return stringbuffer
+	package me.todzhang;
+
+*/
+
+//	public class RemoveDup {
+	
+
+	public static void main(String[] arqs) {
+			// Map<Character,Integer> cnt = new HashMap<Character,Integer>();
+
+			String input = "ccbeacdcbc";
+			System.out.println("===== my solutions ====");
+			mySolution(input);
+			System.out.println("===== greedy solutions====");
+			String str=greedyRemoveDuplicateLetters(input);
+			System.out.println(str);
+		}
+
+		private static void mySolution(String input) {
+			ConcurrentHashMap<Character, AtomicLong> cnt = new ConcurrentHashMap<>();
+
+			System.out.println("==== input ====");
+			System.out.println(input);
+
+			for (char ch : input.toCharArray()) {
+				cnt.putIfAbsent(ch, new AtomicLong(0));
+				cnt.get(ch).incrementAndGet();
+			}
+
+			StringBuffer sb = new StringBuffer();
+			for (char ch : input.toCharArray()) {
+				if (cnt.get(ch).get() > 1) {
+					cnt.get(ch).decrementAndGet();
+				} else {
+					sb.append(ch);
+				}
+			}
+			System.out.println("==== output ====");
+			System.out.println(sb.toString());
+		}
+
+		/**
+		 * Given the string s, the greedy choice (i.e., the leftmost letter in the answer) 
+		 * is the smallest s[i], s.t.
+		 * the suffix s[i .. ] contains all the unique letters. 
+		 * (Note that, when there are more than one smallest s[i]'s, 
+		 * we choose the leftmost one. Why? Simply consider the example: "abcacb".)
+		 * After determining the greedy choice s[i], we get a new string s' from s by
+		 * removing all letters to the left of s[i],
+		 * removing all s[i]'s from s.
+		 * We then recursively solve the problem w.r.t. s'.
+		 * The runtime is O(26 * n) = O(n).
+		 * 
+		 */
+		private static String greedyRemoveDuplicateLetters(String s) {
+			int[] cnt = new int[26];
+			int pos = 0; // the position for the smallest s[i]
+			
+			// as it's all lowercase characeters, so use alphabetic array to ensure O(1) time complexity
+			for (int i = 0; i < s.length(); i++)
+				cnt[s.charAt(i) - 'a']++;
+			for (int i = 0; i < s.length(); i++) {
+				// keep on iterative, to keep pos set as the lowest value
+				if (s.charAt(i) < s.charAt(pos))
+					pos = i;
+				
+				// break condition (if decresed counter then equals zero), quit current stack
+				if (--cnt[s.charAt(i) - 'a'] == 0)
+					break;
+			}
+			
+			// base case, length is zero, return empty string
+			String tmp = s.length() == 0 ? "" : s.charAt(pos)
+					+ greedyRemoveDuplicateLetters(s.substring(pos + 1).replaceAll(
+							"" + s.charAt(pos), ""));
+			return tmp;
+		}
+
+	}
+
+
+	I'll present the results first and the code below for those who are interested.
+	The ContainsKey method was, as expected, the slowest, so I'll give the speed of each method in comparison to the speed of that method.
+	•	ContainsKey: 30.654 seconds (baseline)
+	•	AtomicLong: 29.780 seconds (1.03 times as fast)
+	•	TestForNull: 28.804 seconds (1.06 times as fast)
+	•	Trove: 26.313 seconds (1.16 times as fast)
+	•	MutableInt: 25.747 seconds (1.19 times as fast)
+
+
+	The code
+	Here is the crucial code from each method.
+	ContainsKey
+	import java.util.HashMap;
+	import java.util.Map;
+	...
+	Map<String, Integer> freq = new HashMap<String, Integer>();
+	...
+	int count = freq.containsKey(word) ? freq.get(word) : 0;
+	freq.put(word, count + 1);
+	TestForNull
+	import java.util.HashMap;
+	import java.util.Map;
+	...
+	Map<String, Integer> freq = new HashMap<String, Integer>();
+	...
+	Integer count = freq.get(word);
+	if (count == null) {
+	    freq.put(word, 1);
+	}
+	else {
+	    freq.put(word, count + 1);
+	}
+	AtomicLong
+	import java.util.concurrent.ConcurrentHashMap;
+	import java.util.concurrent.ConcurrentMap;
+	import java.util.concurrent.atomic.AtomicLong;
+	...
+	final ConcurrentMap<String, AtomicLong> map = 
+	    new ConcurrentHashMap<String, AtomicLong>();
+	...
+	map.putIfAbsent(word, new AtomicLong(0));
+	map.get(word).incrementAndGet();
+	Trove
+	import gnu.trove.TObjectIntHashMap;
+	...
+	TObjectIntHashMap<String> freq = new TObjectIntHashMap<String>();
+	...
+	freq.adjustOrPutValue(word, 1, 1);
+	MutableInt
+	import java.util.HashMap;
+	import java.util.Map;
+	...
+	class MutableInt {
+	  int value = 1; // note that we start at 1 since we're counting
+	  public void increment () { ++value;      }
+	  public int  get ()       { return value; }
+	}
+	...
+	Map<String, MutableInt> freq = new HashMap<String, MutableInt>();
+	...
+	MutableInt count = freq.get(word);
+	if (count == null) {
+	    freq.put(word, new MutableInt());
+	}
+	else {
+	    count.increment();
+	}
+}
