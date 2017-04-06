@@ -1,26 +1,84 @@
-package com.todzhang;
+package me.todzhang;
 
-/**
- * Created by todzhang on 2017/1/12.
- */
+import java.util.Arrays;
+
+//plusOneSolutions.java
 public class PlusOne {
-    public static int[] plusOne(int[] ary){
-        for (int i=ary.length-1;i>=0;i--){
-            if(ary[i]!=9){
-                ary[i]++;
-                break;
-            }
-            else
-            {
-                ary[i]=0;
-            }
-        }
+	public static void main(String[] args) {
+		System.out.println("=== Start ====");
+		final int[] ary = new int[] { 1, 3 };
+		System.out.println("the result of mime is :"
+				+ java.util.Arrays.toString(plusOneMyOwnWorkable(Arrays.copyOf(ary,ary.length))));
+		System.out.println("the result of better solution is :"
+				+ java.util.Arrays.toString(plusOneBetter(Arrays.copyOf(ary,ary.length))));
+		System.out.println("the result of best solution is :"
+				+ java.util.Arrays.toString(plusOneBest(Arrays.copyOf(ary,ary.length))));
+	}
 
-        // this means the input is all 9999, so just create a new array, and first digit is 1
-        if(ary[0]==0){
-            int[] res=new int[ary.length+1];
-            res[0]=1;return res;
-        }
-        return ary;
-    }
+	private static int[] plusOneBest(int[] ary) {
+		for (int i = ary.length - 1; i >= 0; i--) {
+			if (ary[i] != 9) {
+				ary[i]++;
+				break;
+			} else {
+				ary[i] = 0;
+			}
+		}
+
+		if (ary[0] == 0) {
+			int[] aryRtn = new int[ary.length + 1];
+			System.arraycopy(aryRtn, 1, ary, 0, ary.length);
+			aryRtn[0] = 1;
+			return aryRtn;
+		} else {
+			return ary;
+		}
+	}
+
+	private static int[] plusOneBetter(int[] ary) {
+		int one = 1;
+		int sum = 0;
+		for (int i = ary.length - 1; i > -1; i--) {
+			sum = one + ary[i];
+			one = sum / 10;
+			ary[i] = sum % 10;
+		}
+
+		if (one > 0) {
+			int[] aryRtn = new int[ary.length + 1];
+			System.arraycopy(aryRtn, 1, ary, 0, ary.length);
+			aryRtn[0] = 1;
+			return aryRtn;
+		} else {
+			return ary;
+		}
+
+		// return j+1;
+	}
+
+	private static int[] plusOneMyOwnWorkable(int[] ary) {
+		int carry = 0;
+		for (int i = ary.length - 1; i > -1; i--) {
+			if (ary[i] == 9) {
+				ary[i] = 0;
+				carry = 1;
+			} else {
+				// ary[i]+=carry+1;
+				ary[i] += 1;
+				carry = 0;
+				break;
+			}
+		}
+		if (carry == 1) {
+			int[] aryRtn = new int[ary.length + 1];
+			System.arraycopy(aryRtn, 1, ary, 0, ary.length);
+			aryRtn[0] = 1;
+			return aryRtn;
+		} else {
+			return ary;
+		}
+
+		// return j+1;
+	}
+
 }
