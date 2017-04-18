@@ -1,4 +1,4 @@
-package com.todzhang;
+package me.todzhang;
 
 import java.util.Arrays;
 
@@ -20,8 +20,36 @@ public class Knapstack01 {
 		System.out.println("--total is:"+total);
 		System.out.println("==== result of naiiveApproach is:"+naiiveRecursiveApproach(total, weight, value, value.length));
 		
+		System.out.println("--- my DP aproach:"+get01KnapstackMaxValueDP(weight, value, total));
 	}
 
+	private static int get01KnapstackMaxValueDP(int[] weight,int[] value,int quota){
+		// using DP approach, so firstly create two dimentions arrays
+		// and set up base case (0,1 based)
+	
+		int[][] dp=new int[value.length+1][quota+1];
+		for(int i=0;i<=value.length;i++){
+			for(int j=0;j<=quota;j++){
+				if(i==0 || j==0){
+					dp[i][j]=0;
+					continue;
+				}				
+			
+				if(j>=weight[i-1]){
+					
+					// current weith not bigger than current quota, so add it and trace back
+					// be aware the current position is "i-1" when accessing one dimention array
+					// one the two dimention array using index without -1
+					dp[i][j]=Math.max(dp[i-1][j], value[i-1]+ dp[i-1][j-weight[i-1]]);
+				}
+				else{
+					// bigger then current quota, so pass
+					dp[i][j]=dp[i-1][j];
+				}
+			}
+		}
+		return dp[value.length][quota];
+	}
 
 	private static void myOwnApproach(int[] weight,int[] value,int total){
 		// NOT WORKING
