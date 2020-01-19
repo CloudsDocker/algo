@@ -1,5 +1,3 @@
-package dustin.examples;
-
 import java.util.EnumMap;
 //import java.util.HashMap;
 import java.util.EnumSet;
@@ -103,7 +101,7 @@ public class EnumCollections
          out.println(
               "  (and it is represented in HTML as "
             + color.getHtmlHexadecimalCode() + " and in RGB as "
-            + color.getRgbRepresentation() + ".");
+            + color.getRgbRepresentation() + "");
       }
    }
 

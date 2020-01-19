@@ -1,4 +1,3 @@
-package com.todzhang;
 public class add {
 	// add in Java
 	public static void add(int[] n1, int[] n2, int[] sum) {

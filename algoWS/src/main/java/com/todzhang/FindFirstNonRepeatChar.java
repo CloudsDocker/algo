@@ -1,5 +1,3 @@
-package com.todzhang;
-
 import java.util.*;
 import java.lang.Character;
 

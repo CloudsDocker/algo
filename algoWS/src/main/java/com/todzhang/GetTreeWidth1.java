@@ -1,6 +1,4 @@
- package com.todzhang;
-
- public class GetTreeWidth1{
+public class GetTreeWidth1{
 	 
 	 
  	class Node{

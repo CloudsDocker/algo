@@ -1,5 +1,3 @@
-package com.todzhang;
-
 /**
  * Simulate the CAS of processor
  * @author todzhang

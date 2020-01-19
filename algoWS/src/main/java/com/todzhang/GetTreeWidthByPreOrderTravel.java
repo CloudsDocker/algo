@@ -1,5 +1,3 @@
-package com.todzhang;
-
 import java.util.Arrays;
 
 //the idea is have an array, representing node counts for each layer

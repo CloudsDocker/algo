@@ -1,5 +1,3 @@
-package com.todzhang;
-
 public class ThreeWayDisjoint {
 
 	public static void main(String[] args) {

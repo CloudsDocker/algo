@@ -1,12 +1,11 @@
-package me.todzhang;
-
 import java.util.Arrays;
 
 //plusOneSolutions.java
 public class PlusOne {
 	public static void main(String[] args) {
 		System.out.println("=== Start ====");
-		final int[] ary = new int[] { 1, 3 };
+		final int[] ary = new int[] { 1, 9 };
+		System.out.println("Input is :"+Arrays.toString(ary));
 		System.out.println("the result of mime is :"
 				+ java.util.Arrays.toString(plusOneMyOwnWorkable(Arrays.copyOf(ary,ary.length))));
 		System.out.println("the result of better solution is :"

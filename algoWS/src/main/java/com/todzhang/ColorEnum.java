@@ -1,5 +1,3 @@
-package dustin.examples;
-
 import java.awt.Color;
 
 /**

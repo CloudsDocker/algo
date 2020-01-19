@@ -1,5 +1,3 @@
-package com.todzhang;
-
 public class TreeGetMinDepth {
 
 	public static void main(String[] args) {

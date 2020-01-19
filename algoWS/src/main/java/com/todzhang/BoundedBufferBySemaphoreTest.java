@@ -1,5 +1,3 @@
-package com.todzhang;
-
 import static org.junit.Assert.*;
 
 /**

@@ -1,5 +1,3 @@
-package com.todzhang;
-
 /**
  * a thread safe counter make use CAS, rather than Locks
  * @author todzhang

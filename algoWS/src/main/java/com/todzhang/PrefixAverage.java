@@ -1,5 +1,3 @@
-package com.todzhang;
-
 import java.util.Arrays;
 
 public class PrefixAverage {

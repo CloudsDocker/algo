@@ -1,5 +1,3 @@
-package com.todzhang;
-
 /**
  * This is sample class from https://www.youtube.com/watch?v=M6lYob8STMI
  * @author todzhang

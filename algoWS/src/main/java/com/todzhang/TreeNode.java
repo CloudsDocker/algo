@@ -1,5 +1,3 @@
-package com.todzhang;
-
 public class TreeNode {
 
 	public  int value=Integer.MIN_VALUE;

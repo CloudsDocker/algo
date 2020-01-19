@@ -1,5 +1,3 @@
-package com.todzhang;
-
 /**
  * An abstract base class providing some functionality of the Tree interface
  * @author todzhang

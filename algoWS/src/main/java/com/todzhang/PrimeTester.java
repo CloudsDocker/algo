@@ -1,5 +1,3 @@
-package me.todzhang;
-
 public class PrimeTester {
 
 	/**

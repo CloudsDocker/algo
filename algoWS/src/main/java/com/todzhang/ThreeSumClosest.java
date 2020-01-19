@@ -1,5 +1,3 @@
-package me.todzhang;
-
 import java.util.Arrays;
 
 public class ThreeSumClosest {

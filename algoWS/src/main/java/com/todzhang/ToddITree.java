@@ -1,5 +1,3 @@
-package com.todzhang;
-
 import java.util.Iterator;
 
 public interface ToddITree<T> extends Iterable<T> {

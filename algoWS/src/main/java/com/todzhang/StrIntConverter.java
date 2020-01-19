@@ -1,5 +1,3 @@
-package com.todzhang;
-
 public class StrIntConverter {
 	public static void main(String[] args){
 		System.out.println("==== start ===");

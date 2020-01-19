@@ -1,5 +1,3 @@
-package me.todzhang;
-
 import java.io.Serializable;
 
 public class DoubleCheckedSingleton implements Serializable{

@@ -1,6 +1,3 @@
-package com.todzhang;
-
-
 /**
  * An interface for a binary tree, in which each node has at most two children
  * @author todzhang

@@ -1,5 +1,3 @@
-package com.todzhang;
-
 public class ToddLinkedBinaryTree<T> extends ToddAbstractBinaryTree<T> {
 
 	/*

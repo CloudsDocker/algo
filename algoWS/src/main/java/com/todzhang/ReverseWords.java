@@ -1,4 +1,3 @@
-package com.todzhang;
 import static java.lang.System.out;
 
 public class ReverseWords {

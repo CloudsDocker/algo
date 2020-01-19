@@ -1,5 +1,3 @@
-package com.todzhang;
-
 import java.util.LinkedList;
 import java.util.Queue;
 

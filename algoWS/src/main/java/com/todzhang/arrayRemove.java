@@ -1,5 +1,3 @@
-package com.todzhang;
-
 import org.junit.*;
 
 //import org.hamcrest.
